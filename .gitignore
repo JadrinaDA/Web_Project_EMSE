@@ -12,3 +12,17 @@
 
 # Temporary Files #
 *.tmp
+
+# Build and gradle stuff #
+faircorp_/*
+!faircorp_/faircorp_/
+
+faircorp_/faircorp_/*
+!faircorp_/faircorp_/src
+
+faircorp_/faircorp_/src/main/resources/
+
+faircorp_/faircorp_/src/test/
+
+# Beggining Things #
+faircorp_/faircorp_/src/main/java/com/emse/spring/faircorp/hello/
