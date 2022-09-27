@@ -2,6 +2,7 @@ package com.emse.spring.faircorp.dao;
 
 import com.emse.spring.faircorp.model.Window;
 import com.emse.spring.faircorp.model.WindowStatus;
+import org.springframework.data.repository.query.Param;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -19,5 +20,12 @@ public class WindowDaoCustomImpl implements WindowDaoCustom{
                 .setParameter("id", id)
                 .setParameter("status", WindowStatus.OPEN)
                 .getResultList();
+    }
+
+    public void deleteWindows(@Param("id") Long id) {
+        String jpql = "delete from Window w where w.room.id=:id";
+        em.createQuery(jpql)
+                .setParameter("id", id)
+                .executeUpdate();
     }
 }
