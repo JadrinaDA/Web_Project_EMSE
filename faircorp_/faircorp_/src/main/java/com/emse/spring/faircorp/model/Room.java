@@ -26,14 +26,17 @@ public class Room {
     @OneToMany(mappedBy = "room")
     private List<Window> windows;
 
+    @ManyToOne(optional = false)
+    private Building building;
 
     // Empty constructor
     public Room() {
     }
 
-    public Room(String name, Integer floor) {
+    public Room(String name, Integer floor, Building building) {
         this.name = name;
         this.floor = floor;
+        this.building = building;
     }
 
     // Getters and setters
