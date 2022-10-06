@@ -24,5 +24,8 @@ faircorp_/faircorp_/src/main/resources/
 
 faircorp_/faircorp_/src/test/
 
-# Beggining Things #
+# Beginning Things #
 faircorp_/faircorp_/src/main/java/com/emse/spring/faircorp/hello/
+
+# Test controller
+faircorp_/faircorp_/src/main/java/com/emse/spring/faircorp/api/HelloController.java

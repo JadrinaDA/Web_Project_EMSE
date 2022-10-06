@@ -95,4 +95,12 @@ public class Room {
     public void setWindows(List<Window> windows) {
         this.windows = windows;
     }
+
+    public Building getBuilding() {
+        return building;
+    }
+
+    public void setBuilding(Building building) {
+        this.building = building;
+    }
 }
